@@ -1,0 +1,22 @@
+---
+layout: base.html
+title: Andrew Gele - Data Scientist
+---
+
+<div class="max-w-lg mx-auto mt-6 px-4 text-center">
+  <h1 class="font-semibold text-3xl">Andrew Gelé</h1>
+</div>
+
+<div class="max-w-lg mx-auto mt-6 px-4 text-center">
+  <h2 class="font-semibold text-3xl">Interests</h2>
+  {%- for interest in collections.interests -%}
+  <li>{{ interest.data.title }}</li>
+  {%- endfor -%}
+</div>
+
+<div class="max-w-lg mx-auto mt-6 px-4 text-center">
+  <h2 class="font-semibold text-3xl">Interests</h2>
+  {%- for interest in collections.interests | reverse -%}
+  <li>{{ interest.data.title }}</li>
+  {%- endfor -%}
+</div>
