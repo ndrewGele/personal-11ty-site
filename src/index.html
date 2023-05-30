@@ -3,20 +3,22 @@ layout: base.html
 title: Andrew Gele - Data Scientist
 ---
 
-<div class="max-w-lg mx-auto mt-6 px-4 text-center">
+<div class="mx-auto max-w-2xl py-32 sm:py-4 lg:py-32"></div>
+
+<div class="h-3/4 max-w-lg mx-auto mt-6 px-4 text-center">
   <h1 class="font-semibold text-3xl">Andrew Gelé</h1>
 </div>
 
 <div class="max-w-lg mx-auto mt-6 px-4 text-center">
   <h2 class="font-semibold text-3xl">Interests</h2>
   {%- for interest in collections.interests -%}
-  <li>{{ interest.data.title }}</li>
+    <li>{{ interest.data.title }}</li>
   {%- endfor -%}
 </div>
 
 <div class="max-w-lg mx-auto mt-6 px-4 text-center">
   <h2 class="font-semibold text-3xl">Interests</h2>
   {%- for interest in collections.interests | reverse -%}
-  <li>{{ interest.data.title }}</li>
+    <li>{{ interest.data.title }}</li>
   {%- endfor -%}
 </div>
